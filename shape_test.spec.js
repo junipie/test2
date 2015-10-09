@@ -11,43 +11,43 @@ describe('Shape', function() {
     expect(square.getColor()).toEqual('orange');
   });
 
-  xit('The circle should be blue', function() {
+  it('The circle should be blue', function() {
     expect(circle.getColor()).toEqual('blue');
   });
 
-  xit('What is the circles radius?', function(){
+  it('What is the circles radius?', function(){
     expect(circle.getRadius()).toEqual(3);
   });
 
-  xit('What is the circles diameter? ', function(){
+  it('What is the circles diameter? ', function(){
     expect(circle.getDiameter()).toEqual(6);
   });
 
-  xit('What is the circles area? ', function(){
+  it('What is the circles area? ', function(){
     expect(circle.getArea()).toEqual(18.84955592153876);
   });
 
-  xit('circle is a 2D Shape', function() {
+  it('circle is a 2D Shape', function() {
     expect(circle instanceof shape.Shape2d).toBe(true);
   });
 
-  xit('The cube should be purple', function() {
+  it('The cube should be purple', function() {
     expect(cube.getColor()).toEqual('purple');
   });
 
-  xit('What is the cubes volume?', function() {
+  it('What is the cubes volume?', function() {
     expect(cube.getVolume()).toEqual(27);
   });
 
-  xit('the cube should be a 3D Shape', function() {
+  it('the cube should be a 3D Shape', function() {
     expect(cube instanceof shape.Shape3d).toBe(true);
   });
 
-  xit('the cube should be a Shape', function() {
+  it('the cube should be a Shape', function() {
     expect(cube instanceof shape.Shape).toBe(true);
   });
 
-  xit('the circle should not have volume', function() {
+  it('the circle should not have volume', function() {
     expect(circle.getVolume).toBe(undefined);
   });
 
